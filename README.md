@@ -102,30 +102,102 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+
+STEP 1: Open Quartus II and select new project and choose the file location.
+
+STEP 2: Module Declaration. Module should have the file name.
+
+STEPS 3: Input-Output Delecaration.
+
+STEPS 4: Use assign declaration and wire to define the functionality of logic circuits.
+
+STEP 5: At the end give endmodule.
+
+STEP 6: Run the program and choose RTL viewer to get RTL realization.
 
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: JEEVITHA E
+RegisterNumber:  212222230054
 */
+```
+1)
+2)  SR flipflops
+module flipflops(S,R,Q,Qbar,clk);
+input S,R,clk;
+output reg Q,Qbar;
+initial Q = 0;
+initial Qbar = 1;
+always @(posedge clk)
+begin
+Q = S|((~R)&Q);
+Qbar = R|((~S)&(~Qbar));
+end
+endmodule
 
+ii] JK flipflops
 
+module JK(J,K,Q,Qbar,clk);
+input J,K,clk;
+output reg Q,Qbar;
+initial Q = 0;
+initial Qbar = 1;
+always @(posedge clk)
+begin
+Q = (J&(~Q))|((~K)&Q);
+Qbar = ((~J)&(Qbar))|K&(~Qbar); 
+end
+endmodule
+
+iii] D flipflop
+module Dflipflop(D,Q,Qbar,clk);
+input D,clk;
+output reg Q,Qbar;
+initial Q = 0;
+initial Qbar = 1;
+always @(posedge clk)
+begin
+Q = D;
+Qbar = ~D;
+end
+endmodule
+
+iv] T flipflop
+module Tflipflop(T,Q,Qbar,clk);
+input T,clk;
+output reg Q,Qbar;
+initial Q = 0;
+initial Qbar = 1;
+always @(posedge clk)
+begin
+Q = ((T&(~Q))|((~T)&Q));
+Qbar = ((~T)&Qbar)|(T&(~Qbar));
+end
+endmodule
+
+```
 
 
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
+# SR flipflpos:
+ 
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/e4bfdccc-ee20-409e-aba9-d38fc4d521e9)
 
 
+# JK flipflop:
 
 
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/03911db3-8f93-4393-b754-99a71e4c6d86)
+# D flipflop:
+![Uploading image.png…]()
 
-
-
+# T flipflop:
+![Uploading image.png…]()
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
