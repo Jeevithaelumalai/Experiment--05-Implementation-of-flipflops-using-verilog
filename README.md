@@ -194,19 +194,29 @@ endmodule
 
 ![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/03911db3-8f93-4393-b754-99a71e4c6d86)
 # D flipflop:
-![Uploading image.png…]()
+
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/502e9901-ed35-481c-8a33-15ff2c6027c7)
+
 
 # T flipflop:
-![Uploading image.png…]()
+
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/79c8d364-dcd2-471d-8ba9-95c6cdb13a2e)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+# SR flipflpos:
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/35de7526-82d7-44c3-9ee4-5525adc37e63)
+# JK flipflop:
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/ed3f8b4c-0811-4646-843c-1e7bc00e3cc7)
+# D flipflop:
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/573e4565-7a67-4057-9b10-8d1884a49692)
+# T flipflop:
+![image](https://github.com/Jeevithaelumalai/Experiment--05-Implementation-of-flipflops-using-verilog/assets/118708245/30078272-4159-4eef-a06a-0e52eedfaf86)
 
 
 
+### RESULTS:
+All the flipflops are implementde using verilog and their functionality has been validated using their functional tables.
 
 
-
-
-### RESULTS 
